@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom E | Portfolio</title>
+    <style>
+        :root {
+            --bg: #eef3fb;
+            --surface: #ffffff;
+            --surface-strong: #f8fafc;
+            --accent: #2563eb;
+            --accent-soft: #dbeafe;
+            --text: #111827;
+            --muted: #475569;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top center, rgba(37, 99, 235, 0.15), transparent 35%), var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            border-radius: 18px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background: #1e293b;
+            color: white;
+            padding: 2rem 1rem;
+        }
+
+        .header-inner {
+            max-width: 980px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .header-title {
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+        .header-meta {
+            text-align: right;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        main {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 2rem 1rem 3rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+            color: var(--text);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p,
+        ul {
+            margin: 0;
+        }
+
+        ul {
+            padding-left: 1.3rem;
+        }
+
+        .profile-about p,
+        .card p {
+            color: var(--muted);
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            padding: 0.55rem 1rem;
+            margin-top: 1rem;
+            background: var(--accent-soft);
+            color: var(--accent);
+            border-radius: 999px;
+            font-weight: 600;
+            width: fit-content;
+        }
+
+        .skills-list,
+        .goals-list,
+        .interests-list {
+            list-style: disc;
+            gap: 0.6rem;
+            display: grid;
+            margin-top: 1rem;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .button,
+        button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 999px;
+            padding: 0.85rem 1.4rem;
+            background: var(--accent);
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-weight: 600;
+        }
+
+        .button:hover,
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18);
+        }
+
+        .button.secondary {
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+
+        .contact form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact label {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .contact input,
+        .contact textarea,
+        .contact select {
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 0.95rem 1rem;
+            font-size: 0.98rem;
+            background: var(--surface-strong);
+            color: var(--text);
+        }
+
+        .contact textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 740px) {
+            .header-inner,
+            .profile-grid {
+                grid-template-columns: 1fr;
+                text-align: left;
+            }
+
+            .header-meta {
+                text-align: left;
+            }
+
+            .profile-grid {
+                gap: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <h1 class="header-title">Wisdom E.</h1>
+                <p class="pill">Aspiring Software Engineer</p>
+            </div>
+            <div class="header-meta">
+                <p>Age: 19</p>
+                <p>Delta State, Nigeria</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="card profile-card">
+            <div class="profile-grid">
+                <div class="profile-about">
+                    <h2>About Me</h2>
+                    <p>My name is Wisdom E, a 19-year-old from Delta State, Nigeria. I’m focused on building a strong future for myself through knowledge, discipline, and skill development. My main goal right now is to make my first $1 million, and I’m determined to achieve that by learning valuable skills and working consistently toward success.</p>
+                    <div class="actions">
+                        <a class="button" href="#contact">Contact me</a>
+                        <a class="button secondary" href="https://www.google.com" target="_blank" rel="noopener noreferrer">Visit Google</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://biographytribune.com/wp-content/uploads/2023/10/nell-fisher-headshot.jpg" alt="Profile image">
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Goals</h3>
+            <p>My biggest goal is financial success and independence. I want to grow into someone who creates opportunities, builds valuable projects, and reaches the milestone of earning my first million dollars.</p>
+        </section>
+
+        <section class="card">
+            <h3>Skills I'm Learning</h3>
+            <ul class="skills-list">
+                <li>Coding</li>
+                <li>Formatting</li>
+                <li>Video / Content Editing</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>Interests</h3>
+            <p>In my free time, I enjoy:</p>
+            <ul class="interests-list">
+                <li>Watching movies</li>
+                <li>Reading and gaining knowledge</li>
+                <li>Gaming</li>
+            </ul>
+            <p>Learning new things and expanding my understanding of the world is something I value a lot.</p>
+        </section>
+
+        <section class="card">
+            <h3>Dream Career</h3>
+            <p>My dream career is to become a software engineer, where I can build useful technology, solve problems, and create systems that help people.</p>
+        </section>
+
+        <section class="card">
+            <h3>Personal Strength</h3>
+            <p>My greatest strengths are vision and creativity. I like thinking about new ideas, imagining bigger possibilities for the future, and finding creative ways to achieve my goals.</p>
+        </section>
+
+        <section id="contact" class="card contact">
+            <h3>Contact Me</h3>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wisdom E. All rights reserved.</p>
+    </footer>
+</body>
+</html>
