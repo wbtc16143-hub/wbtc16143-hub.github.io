@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Wisdom E, an aspiring software engineer from Nigeria. Explore my goals, skills, projects, and get in touch.">
+    <meta name="keywords" content="Wisdom E, software engineer, portfolio, Nigeria, coding, projects">
     <title>Wisdom E | Portfolio</title>
     <style>
         :root {
@@ -47,6 +49,32 @@
             background: #1e293b;
             color: white;
             padding: 2rem 1rem;
+        }
+
+        nav {
+            background: #0f172a;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
         }
 
         .header-inner {
@@ -208,6 +236,14 @@
             font-size: 0.95rem;
         }
 
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            margin: 0 0.5rem;
+        }
+
         @media (max-width: 740px) {
             .header-inner,
             .profile-grid {
@@ -227,9 +263,18 @@
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="header-inner">
             <div>
-                <h1 class="header-title">Wisdom E.</h1>
+                <h1 class="header-title">Wisdom10</h1>
                 <p class="pill">Aspiring Software Engineer</p>
             </div>
             <div class="header-meta">
@@ -240,13 +285,16 @@
     </header>
 
     <main>
-        <section class="card profile-card">
+        <section id="about" class="card profile-card">
             <div class="profile-grid">
                 <div class="profile-about">
                     <h2>About Me</h2>
-                    <p>My name is Wisdom E, a 19-year-old from Delta State, Nigeria. I’m focused on building a strong future for myself through knowledge, discipline, and skill development. My main goal right now is to make my first $1 million, and I’m determined to achieve that by learning valuable skills and working consistently toward success.</p>
+                    <p>My name is Wisdom10, a 19-year-old aspiring software engineer from Delta State, Nigeria. Born and raised in a vibrant community, I've always been driven by a passion for technology and innovation. Growing up, I witnessed how digital tools could transform lives, from simple apps that connect people to complex systems that solve real-world problems. This inspired me to pursue a career in software engineering, where I can create solutions that make a difference.</p>
+                    <p>Currently, I'm focused on building a strong foundation in programming and design. I spend my days learning new languages, experimenting with code, and working on personal projects. Beyond academics, I'm committed to personal growth—reading books on leadership and productivity, staying active through sports, and networking with like-minded individuals. My ultimate goal is to achieve financial independence and create opportunities for others, starting with earning my first million dollars through hard work and smart investments.</p>
+                    <p>What sets me apart is my relentless curiosity and willingness to learn. I believe that continuous improvement is key to success, and I'm always seeking ways to challenge myself. Whether it's tackling a difficult coding problem or exploring new creative outlets, I approach everything with enthusiasm and determination. I'm excited about the future and the impact I can make in the tech world.</p>
                     <div class="actions">
                         <a class="button" href="#contact">Contact me</a>
+                        <a class="button secondary" href="resume.pdf" download>Download Resume</a>
                         <a class="button secondary" href="https://www.google.com" target="_blank" rel="noopener noreferrer">Visit Google</a>
                     </div>
                 </div>
@@ -256,39 +304,120 @@
             </div>
         </section>
 
-        <section class="card">
+        <section id="goals" class="card">
             <h3>Goals</h3>
-            <p>My biggest goal is financial success and independence. I want to grow into someone who creates opportunities, builds valuable projects, and reaches the milestone of earning my first million dollars.</p>
+            <p>My biggest goal is financial success and independence. I want to grow into someone who creates opportunities, builds valuable projects, and reaches the milestone of earning my first million dollars. This isn't just about money—it's about the freedom it brings to pursue passions, support my family, and give back to my community.</p>
+            <p>Short-term, I'm aiming to complete my education with top grades, land an internship at a tech company, and build a portfolio of impressive projects. Long-term, I envision starting my own tech startup, perhaps in fintech or edtech, to address challenges in Nigeria and beyond. I also want to mentor young people, sharing the knowledge I've gained to help them avoid the pitfalls I encountered.</p>
+            <p>Beyond career, I strive for personal development: improving my communication skills, learning new languages, and maintaining a healthy work-life balance. I believe that true success comes from holistic growth, and I'm committed to becoming a well-rounded individual who contributes positively to society.</p>
         </section>
 
-        <section class="card">
+        <section id="skills" class="card">
             <h3>Skills I'm Learning</h3>
+            <p>I'm actively developing a diverse skill set to prepare for a career in software engineering. Here's what I'm focusing on:</p>
             <ul class="skills-list">
-                <li>Coding</li>
-                <li>Formatting</li>
-                <li>Video / Content Editing</li>
+                <li><strong>Coding:</strong> Proficient in HTML, CSS, and JavaScript for front-end development. Learning Python for back-end and data analysis, including libraries like Django and Pandas.</li>
+                <li><strong>Video / Content Editing:</strong> Skilled in Adobe Premiere Pro and After Effects for creating engaging video content, from tutorials to promotional materials.</li>
+                <li><strong>Graphic Design:</strong> Using Photoshop and Illustrator to design user interfaces, logos, and marketing materials that are both functional and aesthetically pleasing.</li>
+                <li><strong>Problem Solving and Critical Thinking:</strong> Applying logical reasoning to break down complex issues, a skill honed through coding challenges and puzzles.</li>
+                <li><strong>Version Control:</strong> Familiar with Git and GitHub for collaborative development and project management.</li>
+                <li><strong>Soft Skills:</strong> Improving communication, teamwork, and time management to excel in professional environments.</li>
             </ul>
+            <p>I'm always eager to learn new technologies and tools, staying updated with industry trends through online courses and communities.</p>
+        </section>
+
+        <section id="projects" class="card">
+            <h3>Projects</h3>
+            <p>Here are some projects I've worked on to build my skills and demonstrate my capabilities. Each project has taught me valuable lessons in coding, design, and problem-solving.</p>
+            <ul>
+                <li><strong>Personal Portfolio Website:</strong> This responsive website you're viewing right now! Built with pure HTML and CSS, featuring a clean design, smooth navigation, and mobile-friendly layout. It showcases my ability to create professional web experiences from scratch.</li>
+                <li><strong>Simple Calculator App:</strong> A web-based calculator using JavaScript for dynamic functionality. Implemented features like basic arithmetic operations, memory functions, and error handling, demonstrating my understanding of DOM manipulation and event-driven programming.</li>
+                <li><strong>Video Editing Tutorials:</strong> Created a series of short video tutorials on content creation techniques. Edited using Adobe Premiere, including voiceovers, graphics, and transitions to produce engaging educational content.</li>
+                <li><strong>Basic Blog Platform:</strong> Developed a simple blogging site with HTML, CSS, and JavaScript. Includes features like post creation, categorization, and a responsive design, simulating a full-stack development experience.</li>
+            </ul>
+            <p>These projects represent my journey from beginner to aspiring professional. Check out my <a href="https://github.com/wisdom-e" target="_blank">GitHub</a> for the source code and more details on each project.</p>
         </section>
 
         <section class="card">
             <h3>Interests</h3>
-            <p>In my free time, I enjoy:</p>
+            <p>In my free time, I enjoy a variety of activities that keep me balanced and inspired. These hobbies not only provide relaxation but also fuel my creativity and learning:</p>
             <ul class="interests-list">
-                <li>Watching movies</li>
-                <li>Reading and gaining knowledge</li>
-                <li>Gaming</li>
+                <li><strong>Watching Movies:</strong> I love exploring different genres, from sci-fi thrillers that spark my imagination to documentaries that broaden my knowledge of the world.</li>
+                <li><strong>Reading and Gaining Knowledge:</strong> I'm an avid reader of books on technology, personal development, and history. Currently diving into biographies of successful entrepreneurs and tech leaders.</li>
+                <li><strong>Gaming:</strong> Strategy games and puzzles help sharpen my problem-solving skills, while multiplayer games teach teamwork and quick decision-making.</li>
+                <li><strong>Sports and Fitness:</strong> Playing football and staying active keeps me physically fit and mentally sharp, reminding me of the importance of discipline in all areas of life.</li>
+                <li><strong>Exploring Technology:</strong> I follow tech news, experiment with new gadgets, and participate in online communities to stay ahead of industry trends.</li>
             </ul>
-            <p>Learning new things and expanding my understanding of the world is something I value a lot.</p>
+            <p>Learning new things and expanding my understanding of the world is something I value a lot. These interests not only enrich my life but also inform my work, helping me approach challenges with fresh perspectives.</p>
+        </section>
+
+        <section class="card">
+            <h3>Personal Details</h3>
+            <p>Beyond my professional aspirations, here are some personal facts that give insight into my personality and passions:</p>
+            <ul>
+                <li><strong>Name:</strong> Wisdom10</li>
+                <li><strong>Nickname:</strong> LUIS (19)</li>
+                <li><strong>Favorite Number:</strong> 11</li>
+                <li><strong>Favorite Actresses:</strong> 
+                    <ul>
+                        <li>Dai Luwa - A talented Chinese actress known for her captivating performances.</li>
+                        <li>Zhang Yaqin - Noted for her roles in Chinese films and TV series.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Nell_Fisher" target="_blank">Nell Fisher</a> - A young and talented actress with promising roles in upcoming projects.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Millie_Bobby_Brown" target="_blank">Millie Bobby Brown</a> - Famous for her iconic role as Eleven in Stranger Things.</li>
+                    </ul>
+                    <p>My appreciation for Chinese cinema began with captivating stories and strong performances, while modern talents like Nell Fisher and Millie Bobby Brown inspire me with their youthful energy and skill.</p>
+                </li>
+                <li><strong>Best Football Players:</strong>
+                    <ol>
+                        <li><a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">Lionel Messi</a> - The GOAT, master of dribbling and precision.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Ronaldinho" target="_blank">Ronaldinho</a> - Legendary flair and creativity on the pitch.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Neymar" target="_blank">Neymar</a> - Explosive talent and skillful playmaking.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank">Cristiano Ronaldo</a> - Unmatched work ethic and goal-scoring prowess.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9" target="_blank">Kylian Mbappé</a> - The future of football with incredible speed and technique.</li>
+                    </ol>
+                </li>
+                <li><strong>Favorite Games:</strong>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/PUBG_Mobile" target="_blank">PUBG Mobile</a> - Thrilling battle royale action that tests strategy and reflexes.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/EFootball" target="_blank">eFootball</a> - Realistic football simulation for virtual matches and skill development.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>These personal preferences reflect my diverse interests, from global cinema and sports legends to immersive gaming experiences that keep me engaged and motivated.</p>
+        </section>
+
+        <section class="card">
+            <h3>Education</h3>
+            <p>Education has been a cornerstone of my journey toward becoming a software engineer. I'm currently pursuing a Bachelor's degree in Computer Science at Delta State University, Nigeria, with an expected graduation in 2027. This program has equipped me with a solid foundation in programming, algorithms, data structures, and software engineering principles.</p>
+            <p>Before university, I completed my secondary education at [High School Name] with a focus on Mathematics and Science subjects. I excelled in physics and mathematics, which sparked my interest in computational problem-solving. During this time, I also participated in science fairs and coding clubs, where I first experimented with basic programming.</p>
+            <p>In addition to formal education, I'm committed to continuous learning through online platforms like Coursera, Udemy, and freeCodeCamp. I've completed certifications in web development, Python programming, and digital marketing, always seeking ways to complement my academic knowledge with practical skills.</p>
         </section>
 
         <section class="card">
             <h3>Dream Career</h3>
-            <p>My dream career is to become a software engineer, where I can build useful technology, solve problems, and create systems that help people.</p>
+            <p>My dream career is to become a software engineer, where I can build useful technology, solve problems, and create systems that help people. I envision myself working on innovative projects that address real-world challenges, from developing apps that improve education in underserved communities to creating software that enhances business efficiency.</p>
+            <p>As a software engineer, I want to specialize in full-stack development, allowing me to work on both the user-facing front-end and the robust back-end systems. I'm particularly interested in emerging technologies like artificial intelligence, blockchain, and cloud computing, and how they can be applied to solve problems in healthcare, finance, and education.</p>
+            <p>Beyond technical work, I aspire to take on leadership roles, mentoring junior developers and contributing to open-source projects. I dream of founding my own tech company someday, creating jobs and opportunities for others while building products that make a positive impact on society.</p>
         </section>
 
         <section class="card">
             <h3>Personal Strength</h3>
-            <p>My greatest strengths are vision and creativity. I like thinking about new ideas, imagining bigger possibilities for the future, and finding creative ways to achieve my goals.</p>
+            <p>My greatest strengths are vision and creativity. I like thinking about new ideas, imagining bigger possibilities for the future, and finding creative ways to achieve my goals. This visionary mindset helps me see opportunities where others see obstacles, and it drives me to innovate in my projects and daily life.</p>
+            <p>For example, when faced with a coding challenge, I don't just follow tutorials—I experiment with different approaches, often combining unexpected elements to create unique solutions. In my content creation, I blend humor, education, and storytelling to make complex topics accessible and engaging.</p>
+            <p>Creativity extends beyond technical skills; it's about problem-solving in all areas. Whether organizing a community event or planning my career path, I always look for creative, efficient ways to achieve results. This strength, combined with my determination and adaptability, gives me confidence that I can overcome any challenge and turn my dreams into reality.</p>
+        </section>
+
+        <section class="card">
+            <h3>Achievements</h3>
+            <p>While I'm still early in my career, I'm proud of the milestones I've reached so far. Each achievement represents a step forward in my journey toward becoming a skilled software engineer:</p>
+            <ul>
+                <li><strong>Completed Online Courses:</strong> Finished comprehensive courses in Python programming, web development (HTML, CSS, JS), and data structures on platforms like Coursera and freeCodeCamp, earning certificates for each.</li>
+                <li><strong>Built My First Website:</strong> Created this portfolio website from scratch, demonstrating my ability to design and code a professional, responsive web presence.</li>
+                <li><strong>Participated in Coding Challenges:</strong> Competed in local and online coding competitions, solving algorithmic problems and improving my problem-solving speed and accuracy.</li>
+                <li><strong>Content Creation:</strong> Produced and edited video tutorials on content creation, which have been viewed by hundreds and received positive feedback for their clarity and engagement.</li>
+                <li><strong>Academic Excellence:</strong> Maintained a strong GPA in my Computer Science program, particularly excelling in programming and mathematics courses.</li>
+                <li><strong>Community Involvement:</strong> Volunteered to teach basic coding to high school students, sharing my knowledge and inspiring the next generation of tech enthusiasts.</li>
+            </ul>
+            <p>These accomplishments motivate me to keep pushing forward, and I look forward to adding many more to this list as I progress in my career.</p>
         </section>
 
         <section id="contact" class="card contact">
@@ -320,7 +449,15 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Wisdom E. All rights reserved.</p>
+        <p>&copy; 2026 Wisdom10. All rights reserved.</p>
+        <p>Built with passion using HTML and CSS. Last updated: April 2026.</p>
+        <div class="social-links">
+            <a href="https://github.com/wisdom-e" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/wisdom-e" target="_blank">LinkedIn</a> |
+            <a href="https://twitter.com/wisdom_e" target="_blank">Twitter</a> |
+            <a href="https://www.tiktok.com/@wisdom.1910.11" target="_blank">TikTok</a> |
+            <a href="mailto:wisdom@example.com">Email</a>
+        </div>
     </footer>
 </body>
 </html>
